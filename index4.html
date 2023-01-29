@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>  
+<head>   
+<title>  
+"Registration"
+</title>
+
+<style>
+* {
+  margin: 0
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+   width: 100%;
+  background-image: url("rmhs12.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  
+
+  
+}
+
+.container h1 {
+  color: white;
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.registartion-form {
+	border-radius:50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 480px;
+  color: rgb(285, 255, 255);
+  font-size: 20px;
+  font-family: sans-serif;
+  background-color: #000;
+  padding: 9px;
+  background: linear-gradient(to right, #070004 50%,#8FBC8F 10%, #001AD4 40%);
+}
+
+.registartion-form input,
+.registartion-form select,
+.registartion-form textarea {
+  border: none;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+
+.registartion-form input:focus,
+.registartion-form textarea:focus {
+  box-shadow: 3px 3px 10px rgb(228, 228, 228), -3px -3px 10px rgb(224, 224, 224);
+}
+
+.registartion-form .submit {
+  width: 40%;
+  padding: 6px 0;
+  font-size: 20px;
+  color: rgb(44, 44, 44);
+ background: linear-gradient(to right, #00CA2E 50%,#8FBC8F 10%, #fff 40%);
+  border-radius: 5px;
+   margin-left: 152px;
+  margin-right: 0px;
+  border-radius:50px;
+}
+
+.registartion-form .submit:hover {
+  box-shadow: 3px 3px 6px rgb(255, 214, 176);
+}
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+border-radius: 5%;
+  
+}
+
+a:hover, a:active {
+  background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+  color: white;
+}
+
+</style> 
+</head>
+<center><h1 style="color:black";><i><u> <strong>Registration Form</strong></u></i></h1></center>
+<body>
+<center><img src="logoarnelrnhs .jpg" height="150" width="150"> </center>
+<div class="container">
+  
+  <form name="registration" class="registartion-form" onsubmit="return formValidation()">
+    <table>
+	
+      <tr>
+	  
+			<td><label for="name"><u><i>First Name:</i></u></label></td>
+			<td><input type="text" name="name" id="name" placeholder="your first name"></td>
+	 </tr>
+	  <tr>
+			<td><label for="name"><u><i>Middle Name:</i></u></label></td>
+				<td><input type="text" name="name" id="name" placeholder="your middle name"></td>
+      </tr>
+	  <tr>
+					<td><label for="name"><u><i>last Name:</i></u></label></td>
+						<td><input type="text" name="name" id="name" placeholder="your last name"></td>
+      </tr>
+      <tr>
+					<td><label for="email"><u><i>Email:</i></u></label></td>
+						<td><input type="text" name="email" id="email" placeholder="your email"></td>
+      </tr>
+      <tr>
+					<td><label for="password"><u><i>Password:</i></u></label></td>
+        <td><input type="password" name="password" id="password" placeholder="password:"></td>
+      </tr>
+	  <tr>
+	  <td><label for="name"><u><i>Re-type Password:</i></u></label></td>
+        <td><input type="text" name="name" id="name" placeholder="Re-type password:"></td>
+      </tr>
+	  <tr>
+        <td><label for="phoneNumber"><u><i>Phone Number:</i></u></label></td>
+        <td><input type="number" name="phoneNumber" id="phoneNumber"></td>
+      </tr>
+      <tr>
+        <td><label for="gender"><u><i>Gender:</i></u></label></td>
+        <td> <input type="radio" name="gender" value="male">Male:
+           <input type="radio" name="gender" value="female">Female:
+           <input type="radio" name="gender" value="other">Other:
+      </tr>
+      
+		  <tr>
+		  <td><label for="name"><u><i>Street</i></u></label></td>
+        <td><input type="text" name="street" id="street" placeholder="street:"></td>
+      </tr>
+	  </tr>
+		  <tr>
+		  <td><label for="name"><u><i>Barangay</i></u></label></td>
+        <td><input type="text" name="street" id="barangay" placeholder="barangay:"></td>
+      </tr>
+        </td>
+		<tr>
+        <td><label for="language"><u><i>City</i></u></label></td>
+        <td>
+          <select name="language" id="language">
+            <option value="">Rosales</option>
+            <option value="English">Dagupan</option>
+            <option value="Spanish">Urdaneta</option>
+            <option value="Hindi">Alaminos</option>
+            <option value="Arabic">Manaog</option>
+            <option value="Russian">San carlos</option>
+          </select>
+		  </tr>
+      </tr>
+      <tr>
+	  <td><label for="province">province</label></td>
+        <td>
+		
+          <select name="language" id="language">
+            <option value="">pangasinan</option>
+            <option value="English">tarlac</option>
+            <option value="Spanish">ilocos sur</option>
+            <option value="Hindi">ilocos norte</option>
+            <option value="Arabic">zambales</option>
+            <option value="Russian">nueva ecija</option>
+          </select>
+        
+      </tr>
+      <tr>
+        <td><label for="about">About:</label></td>
+        <td><textarea name="about" id="about" placeholder="Write about yourself..."></textarea></td>
+      </tr>
+      
+	  
+    </table>
+	
+  </form>
+</div>
+<center><a href="index3.html"><b><i>Done</i><b></a></center>
+</body>
+</html>

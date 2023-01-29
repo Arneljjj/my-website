@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image</title>
+  <link rel="icon" href="Rnhs1.jpg" type="image/icon type">
+  <style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.slowFade {
+    display: flex;
+    align-items: flex-start;
+    background: #000;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+body{ 
+background-color: #00000;
+}
+.slowFade .slide img {
+    position: absolute;
+    min-width: 70%;
+    min-height: 70%;
+    height: auto;
+    background: #000;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    opacity: 5;
+    transform: scale(1.5) rotate(15deg);
+    -webkit-animation: slowFade 32s infinite;
+            animation: slowFade 32s infinite;
+}
+.slowFade .slide:nth-child(3) img {
+    -webkit-animation-delay: 16s;
+            animation-delay: 16s;
+}
+.slowFade .slide:nth-child(2) img {
+    -webkit-animation-delay: 16s;
+            animation-delay: 16s;
+}
+.slowFade .slide:nth-child(1) img {
+    -webkit-animation-delay: 24s;
+            animation-delay: 24s;
+}
+@keyframes slowFade {
+    25% {
+        opacity: 5;
+        transform: scale(1) rotate(0);
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slowFade {
+    25% {
+        opacity: ;
+        transform: scale(1) rotate(0);
+    }
+    40% {
+        opacity: 0;
+    }
+}
+a:link, a:visited {
+  background-color: violet;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+border-radius: 5%;
+  
+}
+
+a:hover, a:active {
+  background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+  color: white;
+}
+  </style>
+  </head>
+<body>
+<div class="slides slowFade">
+        <div class="slide">
+            <img src="student7.jpg" alt="img"/>
+        </div>
+        <div class="slide">
+            <img src="students1.jpg" alt="img"/>
+        </div>
+        <div class="slide">
+            <img src="student9.jpg" alt="img"/>
+        </div>
+        <div class="slide">
+            <img src="students1.jpg" alt="img"/>
+        </div>
+		
+    </div>
+        
+        
+		
+		
+    </div>
+  <div class="image">
+  <center><a href="index.html "><b>Back To Home :) </b></a></center>
+            <img src="student4.jpg" alt="img"/ style="width:100%;height:100%;">
+        </div>
+		<div class="image">
+            <img src="student5.jpg" alt="img"/ style="width:100%;height:100%;">
+        </div>
+		<div class="image">
+            <img src="student6.jpg" alt="img"/ style="width:100%;height:100%;">
+        </div>
+		<div class="image">
+            <img src="student7.jpg" alt="img"/ style="width:100%;height:100%;">
+        </div>
+		<div class="image">
+            <img src="student8.jpg" alt="img"/ style="width:100%;height:100%;">
+        </div>
+		<div class="image">
+            <img src="student9.jpg" alt="img"/ style="width:100%;height:100%;">
+        </div>
+		<div class="image">
+            <img src="student10.jpg" alt="img"/ style="width:100%;height:100%;">
+        </div>
+		<div class="image"><img src="student11.jpg" alt="img"/ style="width:100%;height:100%;">
+        </div>
+		<div class="image">
+            <img src="student12.jpg" alt="img"/  style="width:100%;height:100%;">
+        </div>
+</body>
+</html>

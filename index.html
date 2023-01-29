@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title> Website</title>
+<link rel="icon" href="Rnhs1.jpg" type="image/icon type">
+	
+	<style>
+	
+		body{
+			background-color:#161616;
+		}
+		body{
+	margin:0px;
+	padding:0px;
+	background-color:#161616;	
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+#main{
+	padding:30px 50px;
+	position:relative;
+	width:100%;
+	height: 100vh;
+	box-sizing: border-box;
+	background-size: 1430px;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-image: url("rmhs12.jpg");
+	background-color: #16CC00;
+}
+nav{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: calibri;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	box-sizing: border-box;
+	padding: 10px 50px;
+	background-color: rgba(0, 0, 0, 0.15);
+	box-shadow:2px 2px 12px rgba(0,0,0,0.05); 
+	z-index: 1;
+}
+ 
+.menu{
+	display: flex;
+}
+.menu li a{
+	padding: 10px 15px;
+	color:#fff;
+	font-size: 18px;
+	border-radius: 50px;
+	background: #99004d;
+	
+}
+.lang{
+	color:#292929;
+}
+.logo{
+	font-size: 25px;
+	font-weight: bold;
+	color:#000;
+	font-family:Poppins;
+}
+.toggle{
+	display: none;
+}
+.active a,
+.menu li a:hover{
+	background-color:#000;
+	color:#FFF!important;
+	font-weight: bold;
+	transition: all ease 0.1s;
+}
+img {
+  border-radius: 500%;
+  width: 200px;
+  height: 200px;
+}
+.name{
+	font-family: calibri;
+	width: 500px;
+	position: absolute;
+	left: 20%;
+	top: 50%;
+	transform: translate(-20%,-50%);
+}
+.name p:nth-child(1),.name .details{
+	color:#6c707c;
+	font-size: 16px;
+}
+.name h1{
+	font-family:Poppins;
+	font-size: 40px;
+	margin:0px;
+	letter-spacing: 3px;
+	color:#292929;
+}
+.cv-btn{
+	width:200px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #292929;
+	color:#FFFFFF;
+}
+.cv-btn:hover{
+	background-color: #131313;
+	transition: all ease 0.5s;
+}
+.black-line {
+  align-self: end;
+  width: 50%;
+  height: 15%;
+  margin-bottom: 4em;
+  position: absolute;
+	bottom:0px;
+	left: -3%;
+	border-right: 1px solid  rgba(41,41,41,0.30);
+}
+ 
+.black-line::after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 11px 11px 0 11px;
+ border-color:  #292929 transparent transparent transparent;
+  right: -.7em;
+  bottom: -2px;
+}
+ 
+ 
+.social{
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+	display: flex;
+ 
+}
+.social a{
+	margin: 6px 12px;
+ 
+}
+.social i{
+	color:rgba(18,17,17,0.40);
+	font-size: 14px;
+}
+.social a:hover i{
+	color:#17d1ac;
+	transition: all ease 0.5s;
+}
+#about{
+	width:100%;
+	height: 100vh;
+	background-color:#161616;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 50px 5% 0px 5%;
+	position: relative;
+}
+.about-text{
+	font-family: calibri;
+	width: 50%;
+}
+.about-text h1{
+	font-size: 5rem;
+	color:#17d1ac;
+}
+.about-text h2{
+	font-size: 3rem;
+	color:#FFFFFF;
+	font-weight: 400;
+}
+.about-text h1,h2{
+	margin: 0px;
+	padding: 0px;
+}
+.about-text p{
+	font-size: 1.2rem;
+	color:rgba(255,255,255,0.90);
+	
+}
+.about-text button{
+	width: 180px;
+	height: 40px;
+	border-radius: 80px;
+	border: none;
+	outline: none;
+	background-color:#17d1ac;
+}
+.about-text button:hover{
+	background-color: #FFFFFF;
+	transition: all ease 0.3s;
+}
+#services{
+		width:100%;
+	height:100vh;
+	box-sizing: border-box;
+	font-family: calibri;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 40px ;
+	
+}
+ 
+.s-heading h1{
+	color:#FFFFFF;
+	font-size: 3rem;
+	margin: 0px;
+	padding: 0px;
+	
+}
+.s-heading p{
+	color:rgba(255,255,255,0.30);
+	font-size: 1rem;
+	margin: 0px;
+	padding: 0px;
+}
+.s-heading{
+	text-align: center;
+	margin: 20px 0px;
+}
+.s-box{
+	background-color: #2B2B2B;
+	width:350px;
+	height: 500px;
+	margin: 20px;
+	border-radius: 70px;
+	overflow: hidden;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+	position: relative;
+}
+.b-container{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+ 
+	
+}
+.s-b-img{
+	width: 100%;
+	height: 70%;
+	
+}
+.s-b-img img{
+	width:100%;
+	height: 100%;
+	
+}
+.s-b-text{
+	width: 100%;
+	height: 30%;
+	background-color:#fff;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.s-b-text a{
+	margin: 0px;
+	color:#000;
+	font-size: 1.1rem;
+	font-family: calibri;
+	display: block;
+    display: -webkit-box;
+	max-width: 80%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.s-b-text a:hover{
+	color:rgba(255,255,255,0.50)
+}
+.s-type{
+	font-family: calibri;
+	color:#fff;
+	background-color: #151515;
+	padding: 10px 15px;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 18px;
+	border-radius: 0px 0px 20px 20px;
+	box-shadow: 12px 2px 12px rgba(0,0,0,0.2);
+}
+.s-box:hover{
+	transform:translateY(-10px);
+	transition: all ease 0.3s;
+	
+}
+ a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+border-radius: 5%;
+  
+}
+
+a:hover, a:active {
+  background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+  color: white;
+}
+	.slider {
+    position: relative;
+    width: 350px;
+    margin: 50px auto;
+    perspective: 1000px;
+    padding-top: 120px;
+    }
+ .rotator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 55%;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: roter 29s linear infinite;
+    }
+	.items {
+    position: absolute;
+    height: 150%;
+    width: 150%;
+    overflow: hidden;
+    border: 4px solid white;
+    }
+
+ .items img {
+    height: 100%;
+    width: 100%;
+    transition: all 3s ease;
+    }
+	
+	.items:hover img {
+    transform: scale(1.1);
+    }
+	@keyframes roter {
+    from {
+    transform: rotateY(0deg);
+    }
+    to {
+    transform: rotateY(360deg);
+    }
+    }
+	.items:first-child {
+    transform: rotateY(calc(40deg)) translateZ(300px);
+    }
+
+ .items:nth-child(2) {
+    transform: rotateY(calc(80deg)) translateZ(300px);
+    }
+
+ .items:nth-child(3) {
+    transform: rotateY(calc(120deg)) translateZ(300px);
+    }
+
+ .items:nth-child(4) {
+    transform: rotateY(calc(160deg)) translateZ(300px);
+    }
+
+ .items:nth-child(5) {
+    transform: rotateY(calc(200deg)) translateZ(300px);
+    }
+
+ .items:nth-child(6) {
+    transform: rotateY(calc(240deg)) translateZ(300px);
+    }
+
+ .items:nth-child(7) {
+    transform: rotateY(calc(280deg)) translateZ(300px);
+    }
+
+ .items:nth-child(8) {
+    transform: rotateY(calc(320deg)) translateZ(300px);
+    }
+
+ .items:nth-child(9) {
+    transform: rotateY(calc(360deg)) translateZ(300px);
+    }
+	body{
+     background-image: url("ict5.jpg");
+    }
+
+	.topnav input[type=text] {
+    border: 4px solid #fff;  
+	
+	
+  }
+	</style>
+	
+</head>
+<body>
+
+
+<section id="main">
+	<!--navigation-------------------------------->
+	<nav>
+	
+	
+	<!--menu--------->
+	<center>
+	<div class="toggle"></div>
+	<ul class="menu">
+	<li class="active"><a href="#main" ><i><b>Home</b></i></a></li>
+	<li><a href="index8.html"><i><b>Strand</b></i></a></li>	
+<li><a href="index1.html"><i><b>Events</b></i></a></li>	
+	<li><a href="index2.html"><i><b>Image</b></i></a></li>
+<li><a href="index6.html"><i><b>Video</b></i></a></li>	
+	
+	
+	
+	</ul>
+	
+	</center>
+	
+	<form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+	  
+    </form>
+	</center>
+	
+		
+
+	</nav>
+ </section>
+ 
+  </div>
+ 
+	
+	
+	
+	<head>
+  
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+
+		<section id="about">
+	
+	<div class="about-text">
+	<h1 style="color: black;">Rosales National High school.</h1>
+	<br>
+	<h2><u>Discription</u></h2>
+	<h3 style="color: white;"><b>Rosales National High School (RNHS) is a public secondary educational institution located in Rosales, Pangasinan. The school was established to provide quality and affordable education to its residents.</b></h3>
+	<h2><b><u>About Us</u></b></h2>
+	<br>
+			
+	<center><li><a href="index7.html"><i><b>--->List Of policy- </b>  </i></a></li></center>
+	<p>* School ID : 300341 * School Name : Rosales National High School * School Name w/ Add : Rosales National High School, Rosales, Pangasinan * Short Name : – * Previous Name : Rosales Municipal High School * Address : Coloma Street * Municipality : Rosales * Region : Region I * Province : Pangasinan * Division : Pangasinan II, Binalonan * Legistative District : 6th District * Curricular Class : Junior High School with Senior High School * Date of Operation : Saturday, January 01, 1972 * Sub-Classification : DepED Managed * School Type : School with no Annexes * Class Organization : Monograde * Telephone : 582-4038 * Fax Number : 582-3643</p>
+	
+	<br>
+	<div class="white-line" ></div>
+	<!--social---------------->
+	<br>
+			<br>
+			<br>
+				<br>
+					<br>
+						<br>
+					<br>
+				<br>
+			<br>
+		<br>
+		
+		<br>
+			<br>
+				<br>
+					<br>
+						<br>
+					<br>
+				<br>
+			<br>
+		<br>
+	<br>
+		<br>
+			<br>
+				<br>
+					<br>
+						<br>
+							<br>
+	<div class="social">
+	<a href="#"><i class="fab fa-facebook-f"></i></a>	
+	<a href="#"><i class="fab fa-twitter"></i></a>
+	<a href="#"><i class="fab fa-instagram"></i></a>
+	<a href="#"><i class="fab fa-youtube"></i></a>	
+	</div>
+	</div>
+	
+	
+	<div class="about-model">
+	<img alt="model" src="schooll3dd .png"/>	
+	<img alt="model" src="Rnhs1.jpg"/>	
+	</div>
+	</section>
+	
+	
+	<section id="services">
+	
+	<div class="s-heading">
+	<br>
+	<br>
+	
+<br>
+<br>
+<br>
+<br>
+	<h1 style="color:#fff;"><b><u><i>ROSALES NATIONAL HIGH SCHOOL</u></i></b></h1>
+	<p  style="color:#fff;"><b>Building And Difination-JHS,SHS,Office,</b> </p>
+	</div>
+	
+	<div class="b-container">
+	
+	<div class="s-box">
+	
+	<div class="s-b-img">
+		
+		<div class="s-type">Junior </div>
+		
+		<img src="rmhs23.png">
+	</div>
+	
+	<div class="s-b-text">
+	<p><strong>After completing primary education, students can continue on to lower secondary education. In the Philippines, this is called Junior High School (JHS). Students complete Junior High School by taking exams for the Junior High School Diploma.</strong></p>	
+	</div>
+	</div>
+		
+	<div class="s-box">
+	
+	<div class="s-b-img">
+	
+		<div class="s-type">Senior High school</div>
+		
+		<img src="rnhs233 .png">
+	</div>
+	<!--text----------------->
+	<div class="s-b-text">
+	<p><strong>Senior High School (SHS) refers to Grades 11 and 12, the last two years of the K to 12 Basic Education Program. In SHS, students are required to go through a core curriculum and subjects under a track of their choice.</strong></p>	
+	</div>
+	</div>
+		<!--box-3---------------->
+	<div class="s-box">
+	<!--img------------->
+	<div class="s-b-img">
+		<!--type----------->
+		<div class="s-type">Office</div>
+		<!--name------->
+		<img src="rnhs.png">
+	</div>
+	<!--text----------------->
+	<div class="s-b-text">
+	
+	<p><strong>A school office is an administrative functional unit of the school. It is a centralized place from which the principal fulfills his/her administrative duties and roles with the help of clerical and other support staff.</strong></p>	
+	
+	</div>
+	</div>
+	</div>
+	</section>
+	
+     </div>
+	 <br>
+	 <br>
+	 <br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+<center><h1 style="color:#fff;"><b><u><i>ROSALES NATIONAL HIGH SCHOOL. ICT Strand Image.</u></i></b></h1></center>	
+<br>
+<br>
+  <div class="slider">
+     <div class="rotator">
+        <div class="items">
+           <img src="ict1.jpg" alt="items photo" />
+        </div>
+        <div class="items">
+           <img src="ict2.jpg" />
+        </div>
+        <div class="items">
+           <img src="ict3.jpg" alt="items photo" />
+        </div>
+        <div class="items">
+           <img src="ict4.jpg" alt="items photo" />
+        </div>
+        <div class="items">
+           <img src="ict5.jpg" />
+        </div>
+        <div class="items">
+           <img src="ict6.jpg" alt="items photo" />
+        </div>
+        <div class="items">
+           <img src="ict7.jpg" alt="items photo" />
+        </div>
+        <div class="items">
+           <img src="ict8.jpg" alt="items photo" />
+        </div>
+        <div class="items">
+           <img src="ict9.jpg" alt="items photo" />
+		   <br>
+		     <br>
+			   <br>
+			     <br>
+				   <br>
+				     <br>
+        </div>
+		</div>
+		<br>
+		<br>
+		<br>
+		 <br>
+			   <br>
+			     <br>
+				   <br>
+				     <br>
+					 
+					  <br>
+			   <br>
+			     <br>
+				   <br>
+				     <br>
+					  <br>
+			   <br>
+			     <br>
+				   <br>
+				     <br>
+	 <center><a href="index3.html"><i><b><u>Log out</u></b></i></a></center>
+
+</body>
+</html>

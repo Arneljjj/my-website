@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!-- Created: Arnel Bartolata -->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Events</title>
+	   <link rel="icon" href="Rnhs1.jpg" type="image/icon type">
+<style>
+        
+        /* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ background-image: url("student5.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+  
+  
+}
+.slide-container{
+  max-width: 1550px;
+  width: 200%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  border-radius: 25px;
+  background-color: #fff;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("arnelrpgjpgrnhsph edit .jpg ");
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #4070F4;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070F4;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+
+}
+
+.swiper-navBtn{
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #4070F4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #6E93f7;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4070F4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+border-radius: 5%;
+  
+}
+
+a:hover, a:active {
+  background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+  color: white;
+}
+
+          </style>                             
+    </head>
+    <body>
+	
+        <div class="slide-container swiper">
+
+		<center><h1 style="color: #fff;"><u><strong><i> EVENTS.</u></strong></i></h1> </center>
+		<br>
+            <div class="slide-content">
+                <div class="event">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="brigadaskewla .jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h1 class="name" style="color: #000;"><b><u>Brigada Skwela</u></b></h1>
+                            <p class="defination" style="color: #000;"><b><i>The Brigada Eskwela is a schools maintenance program nationwide that engages all education stakeholders to contribute their time, efforts and resources in ensuring that public schools are all set in time for class opening.</b></i></p>
+
+                            
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                               <img src="wikang-pambansa.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                           <h1 class="name" style="color: #000;"><b><u>Buwan Ng Wika</u></b></h1>
+                            <p class="defination" style="color: #000;"><i><b>Agosto, Buwan ng Wika ito ang panahon kung saan ipinagdiriwang natin ang ating pambansang wika, ang wikang filipino kung saan ang mga kabataan ay nag susuot ng mga makasaysayang damit na ginagamit noong nag daan na panahon. Ang Buwan ng Wika ay isang pagdiriwang kung saan inaalala nating mga pilipino ang mga makasaysayang pangyayari sa ating bansa. At hindi mawawala ang mga patimpalak na nagaganap tuwing sasapit ang Buwan wika, halimbawa nalamang ang mga patimpalak na naganap sa aming paaralan gaya ng Lakan at Lakambini na matitipuno at kay gagandang mga dilag na nag pakitang gilas na inilabas ang kanilang mga talento sa pag kanta,pagsayaw ng mga katutubong sayaw, pag tula. At nariyan ang pag sagot ng mga katanungan galing sa mga hurado na konektado sa buwan ng wika. Isa pa sa mga patimpalak ay ang “Spoken Poetry” na pahusayn sa pag tula na may malalim na kahulugan na nagbibigay nang impormasyon at pahalagahan ang ating sariling wika. “Poster Making” kung saan nailalabas ng mga kabataang pinoy ang pagiging malikhain at pagiging ‘Artistic’ na maipahayag ang kahalagahan ng ating wika at ang kasaysayan at mga pangyayari sa ating bansa at kung paano ito pahalagahan at wag kalimutan o pabayaan. Isa pa sa mga patimpalak kapag sumasapit ang Buwan ng Wika ay ang pag sayaw ng mga makasaysayan o katutubong pagsasayaw na ginanap rin sa aming paaralan na naging maayos naman ang nasabing patimpalak,pagandahan,paramihan ng aksesorya upang maging natingkad at makulay at kahanga-hanga ang lahat ng mananayaw at ang mga hurado at maging ang mga manonood ay humanga at nagalingan rin. At ang isa pa sa mga patimpalak na ginagan rin sa aming paaralan ay ang Sabayang Pag-awit na aming sinalihan, Ang sabayang pag-awit ay ang pag kanta ng mga katutubong kanta na itinono sa mga makabagong kanta na kung saan kami ay nag wagi ng Ikalawang Gantimpala. At marami pang mga patimpalak ang nagaganap tuwing sasapit amg Buwan ng Wika.</b></i></p>
+
+                           
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src=" ssgdefed .jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                           <h1 class="name" style="color: #000;"><b><u>Ssg Election</u></b></h1>
+                            <p class="defination"><b><u>The Supreme Student Government (SSG) is the foremost co-curricular student organization authorized to operate and implement pertinent programs, projects and activities in schools nationwide. It lays the groundwork for good governance, volunteerism, unity and cooperation by providing the students various venues where they can improve their leadership knowledge, skills and attitudes. It trains students to become better members of society in accordance with the ideals and principles of participatory democracy and good citizenship. More importantly, it helps the Department cf Education (DepEd) achieve its thrusts as indicated in the Education for All (EFA) Goals, Millennium Development Goals (MDGs) and the Basic Education Social Reform Agenda (BESRA).</u></b></p>
+
+                          
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src=" nutrisionmonth .jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                           <h1 class="name" style="color: #000;"><b><u>Nutrition Month
+</u></b></h1>
+                            <p class="definationn"style="color: #000;"><i><b>Is your school looking for ways to enhance your nutrition education efforts? Consider celebrating National Nutrition Month during March! This annual observance is a campaign led by the Academy of Nutrition and Dietetics to help people develop healthy eating and physical activity habits.</i></b></p>
+
+                           
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                               <img src=" nationalhararitage.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h1 class="name" style="color: #000;"><b><u>National Harritage Month</u></b></h1>
+                            <p class="defination" style="color: #000;"><b><i>Heritage months are opportunities to celebrate our achievements to date and to ensure that we will have a lot more to celebrate in the future.
+You sent
+Does your school celebrate Black History Month, Hispanic Heritage Month, and Women's History Month? If so, scheduling performers and speakers for the assemblies, finding volunteers to score the student essays, and planning the special menus for the cafeteria probably take every minute you can squeeze out of your already overloaded schedule. But to make these efforts worthwhile, we need to take the time to evaluate the impact of these events.</i></b></p>
+
+                            
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="teachersday .jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h1 class="name" style="color: #000;"><b><u>Teacher's Day</u></b></h1>
+                            <p class="description" style="color: #000;"><i><b>Teacher’s Day is all about celebrating the noble profession of teaching. The day is celebrated in India with great enthusiasm. On this day, teachers of schools and colleges are given gifts by their students as a token of appreciation and respect. It is observed on 5th September every year by different schools and colleges.</i></b></p>
+
+                            
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="christmassparty.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                           <h1 class="name" style="color: #000;"><b><u>Christmas Party
+</u></b></h1>
+                            <p class="defination" style="color: #000;"><i><b>A single celebration can make memories, spend time with each other and at the same time enjoy. The kids were very excited about Christmas because of the gifts, and a Christmas Party is a great way to reward students for working hard and achieving their goals at school.</i></b>.</p>
+
+                            
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src=" foundationday.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                           <h1 class="name" style="color: #000;"><b><u>Foundation Day</u></b></h1>
+                            <p class="defination" style="color: #000;"><i><b>The Foundation Day is typically the date when the school first opened its doors to the public. On special milestones such as the 10th or 25th founding anniversary, the celebration may be done for several days. This is usually done to accommodate the various activities lined up for the occasion.</i></b></p>
+
+                            
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="recognationday.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h1 class="name" style="color: #000;"><b><u>Recognition Day</u></b></h1>
+                            <p class="defination" style="color: #000;"><b><i>Recognition Day - The Day When Students' Hard Work are Recognized. 7:03 AM. At the end of every school-year, students who have worked hard in their academics, conduct, and attendance are given due recognition for their efforts.</i></b></p>
+
+                  
+                        </div>
+						<div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="movingup.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h1 class="name" style="color: #000;"><b><u>Moving Up</u></b></h1>
+                            <p class="defination" style="color: #000;"><b><i>Moving up is a special event wherein students officially move up to their next level of education— from elementary to middle school, from middle school to high school, and from high school to college. Moving Up Day marks a milestone life. All students get to start on a clean slate in a relatively new environment.</i></b></p>
+
+                  
+                        </div>
+                    </div>
+                </div>
+				<br>
+				<center><a href="index.html"><i><b><u>Back To Home</u></b></i></a></center>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        
+    </body>
+</html>
