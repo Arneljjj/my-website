@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!-- Created: Arnel Bartolata -->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Strand</title>
+	   <link rel="icon" href="Rnhs1.jpg" type="image/icon type">
+<style>
+        
+        /* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ background-image: url("student5.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+  
+  
+}
+.slide-container{
+  max-width: 1550px;
+  width: 200%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  border-radius: 25px;
+  background-color: #fff;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("arnelrpgjpgrnhsph edit .jpg ");
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #4070F4;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070F4;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+
+}
+
+.swiper-navBtn{
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #4070F4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #6E93f7;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4070F4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+border-radius: 5%;
+  
+}
+
+a:hover, a:active {
+  background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+  color: white;
+}
+img {
+  border-radius: 500%;
+}
+}
+          </style>                             
+    </head>
+    <body>
+	
+        <div class="slide-container swiper">
+		<center><img src="logoarnelrnhs .jpg" height="150" width="150"> </center>
+
+		<center><h1 style="color: #000;"><u><strong><i> ALL STRAND. RNHS</u></strong></i></h1> </center>
+		<br>
+            <div class="slide-content">
+                <div class="event">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="abm1.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h1 class="name" style="color: #000;"><b><u>(ABM)Accountancy, Business, and Management</u></b></h1>
+                            <p class="defination" style="color: #000;"><b><i>The Accountancy, Business, and Management Strand—or ABM strand—seeks<br> to prepare the young business leaders of tomorrow. ABM strand paves the way<br> for business-related college degrees. It teaches the basic concepts of financial<br> management, accounting, and corporate operations. The programs under this<br> strand aims to instill crucial skills that one needs to perform well in their future<br> careers and businesses.</b></i></p>
+
+                            
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                               <img src="humss1.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                           <h1 class="name" style="color: #000;"><b><u>Humanities and Social Sciences (HUMSS)</u></b></h1>
+                            <p class="defination" style="color: #000;"><i><b>Humanities and Social Sciences is a strand offered to senior high school students under the Academics track.<br> The HUMSS Senior High School strand is designed for students who intend to take up journalism,communication arts,<br> liberal arts, education, and other social-science related courses in college. Because these courses revolve heavily around<br> interacting with other people, the Senior High School HUMSS strand is all about improving students’ reading, writing, and speaking skills.
+A common misconception about the Senior High School HUMSS strand is that it is a lot easier than other tracks and strands or that students who take this strand do not need to study as hard as compared to the other strands (especially those in the Academic track). While HUMSS does not involve as much Math and computation as tracks like ABM or STEM, it is by no means “easier.”twining disciplines (Science, Technology, Engineering, and Mathematics) to see how they work in real life. The STEM strand:
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="stem1.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                           <h1 class="name" style="color: #000;"><b><u>Science, Technology, Engineering, and Mathematics strand. (STEM)</u></b></h1>
+                            <p class="defination"><b><i>The STEM strand gives senior high school students exposure to the intertwining disciplines (Science, Technology, Engineering, and Mathematics) to see how they work in real life. The STEM strand:
+ Builds resilience in a safe environment by allowing students to experiment and to naturally experience failures as part of the learning process
+Encourages teamwork so students can find solutions to problems, record data, write reports, give presentations, and more
+Teaches kids about the power and importance of technology, especially in today’s digital age
+Fosters a habit of adaption when things don’t go as planned </b></i></p>
+                          
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src=" gas1.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                           <h1 class="name" style="color: #000;"><b><u>General Academic Strand (GAS)
+</u></b></h1>
+                            <p class="definationn"style="color: #000;"><i><b>GAS stands for General Academic Strand. Through the GAS, senior high school students are given exposure to different courses so they can make a more informed decision about their future career path.</i></b></p>
+                           
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                               <img src="tvl1.jpg" alt="" class="card-img">
+
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h1 class="name" style="color: #000;"><b><u>Technical-Vocational-Livelihood track.(TVL)</u></b></h1>
+                            <p class="defination" style="color: #000;"><b><i>TVL Strand is designed to develop students' skills that is useful for livelihood and technical projects.<br> It provides a curriculum that is a combination of Core Courses and specialized hands-on courses that meets <br>the competency-based assessment of TESDA.</b></i></p>
+                             <h1 class="name" style="color: #000;"><b><u>ICT,H.E,SMAW.</u></b></h1>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="ictt1.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h1 class="name" style="color: #000;"><b><u>Information and Communication Technology.(ICT)</u></b></h1>
+                            <p class="description" style="color: #000;"><i><b>ICT is a Senior High School strand that prepares you for a career in Information and Communication Technology.<br> It equips you with advanced skills in computer systems, programming, creating web pages, and basic animation.<br>What you will gain from the ICT Strand: Learn about programming, animation or illustration.</i></b></p>
+                            
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="he1.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                           <h1 class="name" style="color: #000;"><b><u>Home Economics {HE)
+</u></b></h1>
+                            <p class="defination" style="color: #000;"><i><b>The Home Economics  offers various specializations that can lead to livelihood projects at home.<br> This strand aims to give you job-ready skills that can help you in finding the right employment.</i></b></p>
+                            
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src=" smaw1.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+				<br>
+				<center><a href="index.html"><i><b><u>Back To Home</u></b></i></a></center>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        
+    </body>
+</html>
